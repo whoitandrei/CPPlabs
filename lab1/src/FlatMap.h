@@ -47,7 +47,7 @@ public:
         }
     }
 
-    ~FlatMap() {
+    virtual ~FlatMap() {
         map_size = 0;
         capacity = 0;
         delete[] map;
