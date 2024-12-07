@@ -30,8 +30,3 @@ public:
     std::size_t erase(const std::string& key);
     void clear();
 };
-
-class A : public FlatMap {
-public:
-    ~A() override {};
-};

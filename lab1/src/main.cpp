@@ -12,7 +12,7 @@ int main() {
     student["group"] = "...";
     student["first_name"] = "Egor";
     */
-    /*int n;
+    int n;
     std::cout << "how many values do you want to add: ";
     std::cin >> n;
     std::cin.ignore();
@@ -50,10 +50,7 @@ int main() {
         else {
             std::cout << "this (" << key << ") key doesn't exist! try another." << std::endl;
         }
-    }*/
-
-    FlatMap* obj = new A();
-    delete obj;
+    }
 
     return 0;
 }
