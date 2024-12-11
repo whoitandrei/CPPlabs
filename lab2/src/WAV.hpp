@@ -34,7 +34,7 @@ private:
 public:
     WAV(std::string filepath);
     virtual ~WAV();
-    void WAV::getFileData();
+    void getFileData();
     std::vector<short>& getSamples();
     WAVHEADER getHeader();
     void copyHeader(WAV* inputWAV);
