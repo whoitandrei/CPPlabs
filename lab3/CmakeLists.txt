@@ -1,0 +1,27 @@
+cmake_minimum_required(VERSION 3.10)
+
+# Название проекта
+project(GAME)
+
+# Установка стандарта C++
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED True)
+
+# Установка исходных и заголовочных директорий
+set(SOURCE_DIR src)
+set(INCLUDE_DIR include)
+
+# Установка исполняемого файла
+set(EXECUTABLE_NAME game)
+
+# Установка исходников
+file(GLOB SOURCES "${SOURCE_DIR}/*.cpp")
+
+# Добавление include директорий
+include_directories(${INCLUDE_DIR})
+
+# Создание исполняемого файла
+add_executable(${EXECUTABLE_NAME} ${SOURCES})
+
+# Установка пути для билда
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)

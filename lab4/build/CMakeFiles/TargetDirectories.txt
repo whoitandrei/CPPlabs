@@ -1,0 +1,5 @@
+D:/NSU/prog/C++/labs/lab4/build/CMakeFiles/csv.dir
+D:/NSU/prog/C++/labs/lab4/build/CMakeFiles/FlatMap.dir
+D:/NSU/prog/C++/labs/lab4/build/CMakeFiles/tuple.dir
+D:/NSU/prog/C++/labs/lab4/build/CMakeFiles/ALL_BUILD.dir
+D:/NSU/prog/C++/labs/lab4/build/CMakeFiles/ZERO_CHECK.dir
