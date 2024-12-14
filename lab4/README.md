@@ -1,7 +1,7 @@
 # Templates
 ## задача
 Основная задача - "шаблонировать" что-либо, чтобы это работало с разными типами данных. Желательно дополнительно почитать/посмотреть про шаблоны, побольше разобраться в теме. Это можно сделать, например, на: 
-- [metanit](https://metanit.com/cpp/tutorial/9.2.php&ved=2ahUKEwj35-nbtqaKAxU6KxAIHQL4F6UQFnoECBsQAQ&usg=AOvVaw0z1pFE3pfMEJf0VIlhVns3)
+- [metanit](https://metanit.com/cpp/tutorial/9.2.php)
 - [microsoft learn](https://learn.microsoft.com/ru-ru/cpp/cpp/templates-cpp?view=msvc-170)
 - [статья на Хабре](https://habr.com/ru/articles/599801/)
 
