@@ -29,18 +29,6 @@ std::string convert<std::string>(const std::string& str) {
 template <typename... Args>
 class CSVParser {
 public:
-    // Constructor for files
-    /*explicit CSVParser(const std::string& filename, int skip_lines)
-        : stream(fileStream), fileStream(filename) {
-        if (!fileStream.is_open()) {
-            throw std::runtime_error("Could not open file: " + filename);
-        }
-        std::string dummy;
-        for (int i = 0; i < skip_lines; i++) {
-            std::getline(stream, dummy, '\n');
-        }
-    }*/
-
     CSVParser(std::istream& inputStream, int skip_lines)
         : stream(inputStream) {
             std::cout << "ignoring " << skip_lines << " lines" << std::endl;
@@ -48,32 +36,8 @@ public:
             for (int i = 0; i < skip_lines; i++) {
                 std::getline(inputStream, dummy, '\n');
             }
-        }
-
-
-    /*
-    // static для того, чтобы функция была статична и ее можно было вызывать без создания экземпляра класса
-    static CSVParser create(int argc, char* argv[]) { 
-        if (argc < 3) {
-            throw std::runtime_error("Usage with ::create(): program [cin|file <filename> <skip lines count>]\n\ntype -h for more info");
-        }
-        if (std::string(argv[1]) == "cin") {
-            
-            if (std::stoi(argv[2]) && std::stoi(argv[2]) >= 0) {
-                std::cout << "Enter CSV data (Ctrl+Z on Windows or Ctrl+D on UNIX to finish):" << std::endl;
-                return CSVParser(*std::cin, std::stoi(argv[3]));
-            }
-            else throw std::runtime_error("Invalid arguments. Use 'cin' or 'file <filename> <skip lines count>'\n\ntype -h for more info");
-        } 
-        else if (std::string(argv[1]) == "file" && argc == 4) {
-            if (std::stoi(argv[3]) && std::stoi(argv[3]) >= 0) return CSVParser(argv[2], std::stoi(argv[3]));
-            else throw std::runtime_error("Invalid arguments. Use 'cin' or 'file <filename> <skip lines count>'\n\ntype -h for more info");
-        } 
-        else {
-            throw std::runtime_error("Invalid arguments. Use 'cin' or 'file <filename>'\n\ntype -h for more info");
-        }
     }
-    */
+
 
     class Iterator {
     public:
